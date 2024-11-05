@@ -1,67 +1,72 @@
 # Site configuration
 # 1. Files excluded from Jekyll builds
-# 2. Installed Gems
-# 3. Gem settings
-# 4. Jekyll settings
-# 5. Collections
-# 6. Jekyll collections settings
-# 7. Site settings
-
-# 1. Files excluded from Jekyll builds
 exclude:
-- README.md
-- CODE_OF_CONDUCT.md
-- CONTRIBUTING.md
-- screenshot.png
-- LICENSE
-- CNAME
-- Gemfile
-- Gemfile.lock
-- garth-jekyll-theme.gemspec
+  - README.md
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - screenshot.png
+  - LICENSE
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - garth-jekyll-theme.gemspec
 
 # 2. Installed Gems
 plugins:
-- jekyll-paginate
+  - jekyll-paginate
 
 # 3. Gem settings
-paginate: 2 # jekyll-paginate > items per page
-paginate_path: page:num # jekyll-paginate > blog page
+paginate: 5 # 한 페이지당 보여줄 포스트 수 증가
+paginate_path: blog/page:num
 
 # 4. Jekyll settings
 sass:
-  style: compressed # Style compression
-permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
-excerpt_separator: <!-- more --> # Marks end of excerpt in posts
-timezone: Europe/London # Timezone for blog posts and alike
+  style: compressed
+permalink: /blog/:year/:month/:day/:title/
+excerpt_separator: <!-- more -->
+timezone: Asia/Seoul # 한국 시간대로 변경
 
 # 5. Collections
 collections:
   posts:
-    title: Blog # Needed for Siteleaf
+    title: "Triple Trouble Devs Blog"
     output: true
-    description: "This is merely a demo, find out more [about Garth](about)" # The post list page content
+    description: "세 명의 개발자가 함께 성장하는 이야기를 공유합니다. 개발 경험, 기술 리뷰, 트러블 슈팅 등 다양한 이야기를 나눕니다."
+  wiki: # 위키 형식의 문서 추가
+    output: true
+    permalink: /:collection/:path/
+  projects: # 프로젝트 컬렉션 추가
+    output: true
+    permalink: /:collection/:path/
 
 # 6. Jekyll collections settings
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: pages
     values:
       layout: page # Default layout
-  -
-    scope:
+  - scope:
       path: ""
       type: posts
     values:
       layout: post # Default layout
 
 # 7. Site settings
-encoding: utf-8 # Make sure the encoding is right
-title: "Garth" # Site name or title
-logo: "/assets/logo.svg" # Site logo
-# favicon: "/favicon.ico" # Uncomment to add custom favicon, or leave as is to use site logo
-description: "A really basic theme for Jekyll, using the official Jekyll theme implementation" # Site description and default description
-url: "https://garth.darn.es" # Site url
+encoding: utf-8
+title: "Triple Trouble Devs"
+subtitle: "성장하는 개발자들의 이야기"
+logo: "/assets/logo.svg"
+favicon: "/assets/favicon.ico"
+description: "Triple Trouble Devs(TTD)의 기술 블로그입니다. 개발 경험과 지식을 공유하고 함께 성장하는 공간입니다."
+url: "https://triple-trouble-devs.github.io"
 baseurl: ""
-lang: en-GB
+lang: ko-KR # 한국어로 변경
+
+# 8. Social settings     # 소셜 링크 추가
+github_username: triple-trouble-devs
+twitter_username:
+linkedin:
+
+# 9. Analytics          # 분석 도구 설정
+google_analytics: # 구글 애널리틱스 ID

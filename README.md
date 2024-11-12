@@ -1,80 +1,79 @@
-# [Garth](https://garth.darn.es/)
-[![Gem Version](https://badge.fury.io/rb/garth-jekyll-theme.svg)](https://badge.fury.io/rb/garth-jekyll-theme)
+# 개노답 삼형제 블로그 📝
 
-🥁 A really basic theme for Jekyll, using the official Jekyll theme implementation.
+개발 여정을 함께하는 세 명의 이야기가 담긴 공간입니다.
 
-[<img src="https://cdn.buymeacoffee.com/buttons/default-yellow.png" width="217"/>](https://buymeacoffee.com/daviddarnes#support)
+## 소개 👋
 
-![Screenshot](https://raw.githubusercontent.com/daviddarnes/garth/master/screenshot.png)
+이 블로그는 우리의 개발 과정에서 얻은 경험과 지식을 공유하고 기록하는 공간입니다.
+'개노답'이라는 이름으로 시작했지만, 끊임없는 학습과 성장을 통해 '해답'을 찾아가는 과정을 담고 있습니다.
 
-## Contents
-- [Installation](#installation)
-- [Customising](#customising)
-- [Site settings](#site-settings)
-- [Page layouts](#page-layouts)
-- [Credits](#credits)
+## 주요 콘텐츠 📚
 
-## Installation
+### 1. 회의록 (Meeting Notes) 🗣️
 
-### Quick setup
+- 팀 회의 내용과 주요 결정사항
+- 프로젝트 진행 상황
+- 향후 계획 및 목표
 
-To give you a running start I've put together some starter kits that you can download, fork or even deploy immediately:
+### 2. 트러블 슈팅 (Trouble Shooting) 🔧
 
-- Vanilla Jekyll starter kit:  
-  [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/garth-kit)
-- Stackbit starter kit:  
-  [![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/daviddarnes/garth-stackbit-kit)
-- GitHub Pages with remote theme kit - **[Download kit](https://github.com/daviddarnes/garth-kit/archive/remote-theme.zip)**
+- 개발 과정에서 마주친 문제들
+- 문제 해결 과정과 방법
+- 실패와 성공의 케이스 스터디
 
-### As a Jekyll theme
+### 3. 학습 노트 (Study Notes) 📖
 
-1. Add `gem "garth-jekyll-theme"` to your `Gemfile` to add the theme as a dependancy
-2. Run the command `bundle install` in the root of project to install the theme and its dependancies
-3. Add `theme: garth-jekyll-theme` to your `_config.yml` file to set the site theme
-4. Run `bundle exec jekyll serve` to build and serve your site
-5. Done! Use the example [`_config.yml`](https://github.com/daviddarnes/garth/blob/master/_config.yml) file to set site-wide options
+- 새로운 기술과 도구 학습 내용
+- 코딩 팁과 베스트 프랙티스
+- 개발 관련 서적 리뷰
+- 유용한 리소스 공유
 
-### As a GitHub Pages remote theme
+## 블로그 운영 원칙 ⭐
 
-1. Add `gem "jekyll-remote-theme"` to your `Gemfile` to add the theme as a dependancy
-2. Run the command `bundle install` in the root of project to install the jekyll remote theme gem as a dependancy
-3. Add `jekyll-remote-theme` to the list of `plugins` in your `_config.yml` file
-4. Add `remote_theme: daviddarnes/garth` to your `_config.yml` file to set the site theme
-5. Run `bundle exec jekyll serve` to build and serve your site
-6. Done! Use the example [`_config.yml`](https://github.com/daviddarnes/garth/blob/master/_config.yml) file to set site-wide options
+1. **정직한 기록**: 성공 뿐만 아니라 실패도 솔직하게 공유합니다.
+2. **지속적인 업데이트**: 정기적으로 새로운 내용을 업데이트합니다.
+3. **협력적 학습**: 서로의 경험을 공유하고 함께 성장합니다.
 
-### As a Boilerplate / Fork
+## 콘텐츠 작성 가이드라인 ✍️
 
-_(deprecated, not recommended)_
+1. 모든 포스트는 다음 정보를 포함해야 합니다:
+   - 작성일자
+   - 작성자
+   - 카테고리 (회의록/트러블슈팅/학습노트)
+   - 관련 태그
+2. 트러블 슈팅 포스트 구조:
 
-1. [Fork the repo](https://github.com/daviddarnes/garth#fork-destination-box)
-2. Replace the `Gemfile` with one stating all the gems used in your project
-3. Delete the following unnecessary files/folders: `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`, `LICENSE`, `screenshot.png`, `CNAME` and `garth-jekyll-theme.gemspec`
-4. Run the command `bundle install` in the root of project to install the jekyll remote theme gem as a dependancy
-5. Run `bundle exec jekyll serve` to build and serve your site
-6. Done! Use the example [`_config.yml`](https://github.com/daviddarnes/garth/blob/master/_config.yml) file to set site-wide options
+   ```
+   - 문제 상황
+   - 시도한 해결 방법
+   - 최종 해결 방안
+   - 학습한 점
+   ```
 
-## Customising
+3. 학습 노트 구조:
+   ```
+   - 학습 주제
+   - 주요 내용
+   - 예제 코드 (있는 경우)
+   - 참고 자료
+   ```
 
-When using Garth as a theme means you can take advantage of the file overriding method. This allows you to overwrite any file in this theme with your own custom file, by matching the file name and path. The most common example of this would be if you want to add your own styles or change the core style settings.
+## 기여 방법 🤝
 
-To add your own styles copy the [`styles.scss`](https://github.com/daviddarnes/garth/blob/master/assets/styles.scss) into your own project with the same file path (`assets/styles.scss`). From there you can add your own styles, you can even optionally ignore the theme styles by removing the `@import "garth";` line.
+1. 새로운 포스트 작성 시 해당 카테고리의 가이드라인을 참고해 주세요.
+2. 기존 포스트에 대한 수정이나 보완이 필요한 경우, 댓글로 의견을 남겨주세요.
+3. 새로운 아이디어나 제안이 있다면 회의록에 안건으로 등록해 주세요.
 
-If you're looking to set your own colours copy the [`_colors.scss`](https://github.com/daviddarnes/garth/blob/master/_sass/_colors.scss) and main theme styles file [`garth.scss`](https://github.com/daviddarnes/garth/blob/master/_sass/garth.scss) into your project at the same file path (`_sass/`) and change variables however you wish. The settings are a mixture of custom variables and settings from [Sassline](https://medium.com/@jakegiltsoff/sassline-v2-0-e424b2881e7e) - follow the link to find out how to configure the typographic settings.
+## 연락처 📫
 
-## Site settings
+- 이메일: [이메일 주소]
+- 깃허브: [깃허브 주소]
 
-You'll need to change the `description`, `title` and `url` to match with the project.
+## 라이선스 ⚖️
 
-## Page layouts
+이 블로그의 모든 콘텐츠는 [라이선스 종류]를 따릅니다.
 
-There are 3 layouts; `page`, `post` and `home` (home acts as the font page blog).
+---
 
-> **Note:** The Post List Page options are actually in the collection data within the `_config.yml` file, this is so they can be edited with CMSs such as [Siteleaf](https://siteleaf.com)
-
-## Credits
-
-- Thanks to [Sassline](https://sassline.com/) for the typographic basis, by [Jake Giltsoff](https://twitter.com/jakegiltsoff)
-- Thanks to [Flexbox mixin](https://github.com/mastastealth/sass-flex-mixin) by [Brian Franco](https://twitter.com/brianfranco)
-- Thanks to [Normalize](https://necolas.github.io/normalize.css/) by [Nicolas Gallagher](https://twitter.com/necolas) and [Jonathan Neal](https://twitter.com/jon_neal).
-- Thanks to [pygments-css](http://richleland.github.io/pygments-css/) for the autumn syntax highlighting, by [Rich Leland](https://twitter.com/richleland)
+우리는 '개노답'에서 시작해 '해답'을 찾아가는 여정을 함께합니다.
+함께 성장하고 발전하는 공간이 되길 희망합니다. 💪

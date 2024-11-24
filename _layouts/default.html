@@ -27,8 +27,13 @@
       gtag('js', new Date());
       gtag('config', 'G-T0D3N2QHJN');
     </script>
-		{{ content }}
+	  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+	  <script>
+		mermaid.initialize({ startOnLoad: true });
+		window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+	  </script>
 
+		{{ content }}
 		<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,700|Neuton:400,700" rel="stylesheet">
 	</body>
 </html>

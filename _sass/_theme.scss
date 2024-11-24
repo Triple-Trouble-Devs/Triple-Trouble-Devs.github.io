@@ -14,7 +14,6 @@ body {
   margin: 0 auto;
 }
 
-
 // Header, feature and footer
 .header,
 .footer {
@@ -51,7 +50,7 @@ body {
 }
 
 .small {
-  padding-top: .6rem;
+  padding-top: 0.6rem;
   color: $captionColour;
   display: inline-block;
 }
@@ -59,7 +58,6 @@ body {
 .footer {
   border-top: 1px solid darken($backgroundColour, 15%);
 }
-
 
 // Nav and copyright
 .nav {
@@ -75,7 +73,6 @@ body {
   margin: 0 1rem;
 }
 
-
 // Main content
 .main {
   @include flexbox;
@@ -86,7 +83,6 @@ body {
     @include flex-direction(row);
   }
 }
-
 
 // Lists
 .list {
@@ -116,7 +112,6 @@ body {
   }
 }
 
-
 // Images and media elements
 img {
   max-width: 100%;
@@ -128,7 +123,6 @@ video {
   width: 100%;
 }
 
-
 // Text selection
 ::selection {
   background: $headingColour;
@@ -136,9 +130,14 @@ video {
   text-shadow: none;
 }
 
-
 // Sassline overrides
 .typeset {
+  // mermaid style
+  .edgeLabel > p,
+  .nodeLabel > p {
+    padding: 0 !important;
+  }
+
   a > code {
     text-shadow: none;
   }
@@ -166,8 +165,8 @@ video {
   .nav a {
     padding-left: 0;
     padding-right: 0;
-    margin-left: .2rem;
-    margin-right: .2rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
   }
   pre {
     white-space: pre;

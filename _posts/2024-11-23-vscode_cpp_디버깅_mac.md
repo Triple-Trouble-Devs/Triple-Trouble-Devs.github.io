@@ -1,14 +1,13 @@
 ---
-title: C++ 빌드 도구와 디버거 선택 및 VSCode 적용'
+title: C++ 빌드 도구와 디버거 선택 및 VSCode 적용
 category: 'luke'
 description: 'C++ 빌드 도구 선택 및 디버거 선택'
 ---
 
 C++ 개발환경을 오랜만에 구축하면서 적절한 컴파일러 선택과 VSCode를 잘 활용하기 위한 빌드 도구와 디버거 설정에 대해 공부하고 정리하고자 합니다.
+[이전 글](https://triple-trouble-devs.github.io/blog/2024/11/18/%ED%8C%A8%ED%82%B7_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD_%EA%B0%80%EC%9D%B4%EB%93%9C/)과 이어지는 부분이 있어 같이 참고하시면 도움이 될 것 같습니다.
 
 <!--more-->
-
-[이전 글](https://triple-trouble-devs.github.io/blog/2024/11/18/%ED%8C%A8%ED%82%B7_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD_%EA%B0%80%EC%9D%B4%EB%93%9C/)과 이어지는 부분이 있어 같이 참고하시면 도움이 될 것 같습니다.
 
 ## 목차
 
